@@ -4,35 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- تحسينات محركات البحث (SEO) -->
     <title>Afnan AI Store | تجربة عطرية استثنائية</title>
     <meta name="description" content="متجر Afnan AI Store - عالم من الفخامة يبدأ من هنا. نحن نجمع لك أرقى العطور العالمية بلمسة من العصرية والذكاء لتناسب حضورك الطاغي. تسوق الآن أفضل العطور الأصلية.">
     <meta name="keywords" content="Afnan ai store, متجر أفنان, عطور أصلية, عطور عالمية, شانيل, ديور, تسوق عطور مصر, ذكاء اصطناعي">
     <meta name="author" content="Afnan AI Store">
     
-    <!-- إعدادات المشاركة على السوشيال ميديا وظهور البانر في محركات البحث (Open Graph) -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Afnan AI Store">
     <meta property="og:title" content="Afnan AI Store | تجربة عطرية استثنائية">
     <meta property="og:description" content="عالم من الفخامة يبدأ من هنا. نحن نجمع لك أرقى العطور العالمية بلمسة من العصرية والذكاء.">
-    <!-- تم استخدام صورة البانر هنا لتظهر كلوجو/صورة مصغرة -->
     <meta property="og:image" content="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=2000&auto=format&fit=crop">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
-    <!-- إعدادات تويتر -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Afnan AI Store | تجربة عطرية استثنائية">
     <meta name="twitter:description" content="عالم من الفخامة يبدأ من هنا. نحن نجمع لك أرقى العطور العالمية بلمسة من العصرية والذكاء.">
-    <!-- تم استخدام صورة البانر هنا أيضاً -->
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=2000&auto=format&fit=crop">
 
-    <!-- Schema Markup لتعريف جوجل رسمياً باسم المتجر والبانر الخاص به -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Store",
       "name": "Afnan AI Store",
+      "url": "https://store.afnanai.com/",
+      "sameAs": [
+        "https://i.afnanai.com/"
+      ],
       "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=2000&auto=format&fit=crop",
       "description": "عالم من الفخامة يبدأ من هنا. نحن نجمع لك أرقى العطور العالمية بلمسة من العصرية والذكاء لتناسب حضورك الطاغي.",
       "telephone": "01015186799",
@@ -46,7 +44,6 @@
     }
     </script>
 
-    <!-- الملفات الأساسية للتصميم -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,7 +118,11 @@
 </head>
 <body>
 
-    <!-- Header -->
+    <div class="sr-only">
+        <a href="https://i.afnanai.com/">منصة Afnan AI الرئيسية</a>
+        <a href="https://store.afnanai.com/">متجر Afnan AI Store</a>
+    </div>
+
     <header id="navbar" class="fixed top-0 left-0 w-full z-50 py-4 px-8 flex justify-between items-center header-glass transition-all duration-500">
         <div class="text-2xl font-black tracking-tighter">AFNAN AI</div>
         <nav class="hidden md:flex gap-10 text-[11px] font-bold tracking-widest uppercase">
@@ -135,7 +136,6 @@
         </button>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero" class="relative h-screen flex items-center justify-center pt-20">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover brightness-50" alt="Luxury Perfume">
@@ -150,7 +150,6 @@
         </div>
     </section>
 
-    <!-- Shop -->
     <section id="shop" class="py-24 px-6 md:px-16 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
@@ -159,12 +158,10 @@
             </div>
 
             <div class="shop-grid" id="product-container">
-                <!-- Data driven products -->
-            </div>
+                </div>
         </div>
     </section>
 
-    <!-- Policy Modal (Full Redesign) -->
     <div id="policy-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-6 modal-blur">
         <div class="bg-white max-w-2xl w-full p-8 md:p-12 rounded-[32px] relative shadow-2xl max-h-[90vh] overflow-y-auto">
             <button onclick="toggleModal('policy-modal')" class="absolute top-8 left-8 text-black hover:rotate-90 transition duration-300">
@@ -211,7 +208,6 @@
         </div>
     </div>
 
-    <!-- Cookie Consent -->
     <div id="cookie-notice" class="fixed bottom-8 left-8 right-8 md:left-auto md:w-[350px] bg-black text-white p-6 rounded-[24px] z-[90] shadow-2xl hidden flex-col gap-4 transform translate-y-20 transition-all duration-700">
         <div class="flex items-center gap-4">
             <span class="text-2xl">🍪</span>
@@ -223,7 +219,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer id="footer" class="bg-[#050505] text-white pt-24 pb-12 px-8">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16 text-center md:text-right">
             <div class="md:col-span-2">
